@@ -1,4 +1,4 @@
-package com.bajodelresca.pruebaatmitaback;
+package com.bajodelresca.pruebaatmitaback.models;
 
 import com.fasterxml.jackson.annotation.*;
 import java.util.List;

@@ -1,19 +1,6 @@
-// To use this code, add the following Maven dependency to your project:
-//
-//
-//     com.fasterxml.jackson.core     : jackson-databind          : 2.9.0
-//     com.fasterxml.jackson.datatype : jackson-datatype-jsr310   : 2.9.0
-//
-// Import this package:
-//
-//     import asteorid.quicktype.Converter;
-//
-// Then you can deserialize a JSON string with
-//
-//     Asteroids data = Converter.fromJsonString(jsonString);
-
 package com.bajodelresca.pruebaatmitaback;
 
+import com.bajodelresca.pruebaatmitaback.models.Asteroids;
 import java.io.IOException;
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.databind.module.SimpleModule;
