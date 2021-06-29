@@ -1,7 +1,5 @@
 package com.bajodelresca.pruebaatmitaback.models;
 
-import com.bajodelresca.pruebaatmitaback.models.OrbitingBody;
-import com.bajodelresca.pruebaatmitaback.models.RelativeVelocity;
 import com.fasterxml.jackson.annotation.*;
 import java.time.LocalDate;
 

@@ -64,4 +64,10 @@ public class NearEarthObject {
     public boolean getIsSentryObject() { return isSentryObject; }
     @JsonProperty("is_sentry_object")
     public void setIsSentryObject(boolean value) { this.isSentryObject = value; }
+
+    @Override
+    public String toString() {
+        return "NearEarthObject{" + "links=" + links + ", id=" + id + ", neoReferenceID=" + neoReferenceID + ", name=" + name + ", nasaJplURL=" + nasaJplURL + ", absoluteMagnitudeH=" + absoluteMagnitudeH + ", estimatedDiameter=" + estimatedDiameter + ", isPotentiallyHazardousAsteroid=" + isPotentiallyHazardousAsteroid + ", closeApproachData=" + closeApproachData + ", isSentryObject=" + isSentryObject + '}';
+    }
+    
 }

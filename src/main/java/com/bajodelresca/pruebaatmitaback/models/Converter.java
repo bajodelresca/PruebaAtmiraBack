@@ -1,6 +1,5 @@
-package com.bajodelresca.pruebaatmitaback;
+package com.bajodelresca.pruebaatmitaback.models;
 
-import com.bajodelresca.pruebaatmitaback.models.Asteroids;
 import java.io.IOException;
 import com.fasterxml.jackson.databind.*;
 import com.fasterxml.jackson.databind.module.SimpleModule;
@@ -47,7 +46,7 @@ public class Converter {
     }
     // Serialize/deserialize helpers
 
-    public Asteroids fromJsonString(String json) throws IOException {
+    public static Asteroids fromJsonString(String json) throws IOException {
         return getObjectReader().readValue(json);
     }
 

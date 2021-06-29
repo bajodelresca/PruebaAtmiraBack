@@ -1,18 +1,26 @@
 package com.bajodelresca.pruebaatmitaback.models;
+
 import com.fasterxml.jackson.annotation.*;
 import java.util.List;
-@JsonIgnoreProperties(ignoreUnknown = true)
+import java.util.Map;
+
 public class Asteroids {
-    private String greeting;
-    private List<Instruction> instructions;
+    private AsteroidsLinks links;
+    private long elementCount;
+    private Map<String, List<NearEarthObject>> nearEarthObjects;
 
-    @JsonProperty("greeting")
-    public String getGreeting() { return greeting; }
-    @JsonProperty("greeting")
-    public void setGreeting(String value) { this.greeting = value; }
+    @JsonProperty("links")
+    public AsteroidsLinks getLinks() { return links; }
+    @JsonProperty("links")
+    public void setLinks(AsteroidsLinks value) { this.links = value; }
 
-    @JsonProperty("instructions")
-    public List<Instruction> getInstructions() { return instructions; }
-    @JsonProperty("instructions")
-    public void setInstructions(List<Instruction> value) { this.instructions = value; }
+    @JsonProperty("element_count")
+    public long getElementCount() { return elementCount; }
+    @JsonProperty("element_count")
+    public void setElementCount(long value) { this.elementCount = value; }
+
+    @JsonProperty("near_earth_objects")
+    public Map<String, List<NearEarthObject>> getNearEarthObjects() { return nearEarthObjects; }
+    @JsonProperty("near_earth_objects")
+    public void setNearEarthObjects(Map<String, List<NearEarthObject>> value) { this.nearEarthObjects = value; }
 }

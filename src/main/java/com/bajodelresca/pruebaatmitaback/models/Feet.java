@@ -1,4 +1,5 @@
 package com.bajodelresca.pruebaatmitaback.models;
+
 import com.fasterxml.jackson.annotation.*;
 
 public class Feet {

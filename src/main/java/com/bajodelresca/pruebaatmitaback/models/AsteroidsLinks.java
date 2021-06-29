@@ -2,7 +2,7 @@ package com.bajodelresca.pruebaatmitaback.models;
 
 import com.fasterxml.jackson.annotation.*;
 
-public class InstructionLinks {
+public class AsteroidsLinks {
     private String next;
     private String prev;
     private String self;
